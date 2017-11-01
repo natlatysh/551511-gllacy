@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Латышева Наталья](https://up.htmlacademy.ru/htmlcss/19/user/551511).
-* Наставник: `Сергей Козлов`.
+* Студент: [Наталья Латышева](https://up.htmlacademy.ru/htmlcss/19/user/551511).
+* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/id27386).
 
 ---
 
