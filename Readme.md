@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
-* Студент: [Неопознанный енот](https://up.htmlacademy.ru/htmlcss/19/user/551511).
-* Наставник: `Неизвестно`.
+* Студент: [Наталья Латышева](https://up.htmlacademy.ru/htmlcss/19/user/551511).
+* Наставник: [Сергей Козлов](https://htmlacademy.ru/profile/id27386).
 
 ---
 
