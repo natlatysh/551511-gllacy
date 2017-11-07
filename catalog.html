@@ -31,13 +31,45 @@
                 <input type="text" placeholder="Что ищем?">
               </form> 
             </div>
-          </div> <!--ты сказал, что форма входа search-form должана быть внутри search, но в то же время в другом месте написано, что модальные формы надо вниз перед /body Так куда в итоге?-->
-          <div class="user-block">
+          </div> 
+          <div class="enter">    
             <a class="btn-user login" href="#">Вход</a>
-          </div>
-          <span class="basket">
-            <a class="btn-user" href="#">2 товара</a>
-          </span>
+            <div class="user-block"> <!--Скрытая форма входа-->
+              <form action="#" method="post">
+                <input type="email" placeholder="Электронная почта">
+                <input type="password" placeholder="Пароль"> 
+                <a href="#" class="btn">Войти</a>
+                <span>
+                  <a href="#">Забыли пароль?</a>
+                  <a href="#">Новая регистрация</a>
+                </span>
+              </form>
+            </div> <!--конец скрытой формы входа-->
+          </div> 
+          <div class="basket">
+            <a class="btn-user basket" href="#">2 товара</a>
+            <div class="basket-form"> <!--Открывающаяся корзина-->
+              <table>
+                <tr>
+                  <td><button class="delete"><span class="visual-hidden">удалить</span></button></td> 
+                  <td><img src="img/citrus.png" alt="ice"></td>
+                  <td>Пломбир с апельсиновым джемом</td>
+                  <td>1,5 кг * <span>200 руб.</span></td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td><button class="delete"><span class="visual-hidden">удалить</span></button></td>
+                  <td><img src="img/strawberry.png" alt="ice"></td>
+                  <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td>1,5 кг * <span>300 руб.</span></td>
+                  <td>450 руб.</td>
+                </tr>
+              </table>
+              Итого: 750 руб.
+              <span class="btn">
+                <a href="#">Оформить заказ</a>
+              </span> 
+            </div>  <!--конец корзины с товарами-->  
           <p class="logo-contact">
             C 10 до 20, ежедневно<br>
             <a href="tel:+78124502525">812 450-25-25</a> 
@@ -257,36 +289,5 @@
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &#169;2017  
       </section>  
     </footer>  
-    <div class="enter-form"> <!--Фoрма входа-->
-      <form action="#" method="post">
-        <input type="email" placeholder="Электронная почта"><br>
-        <input type="password" placeholder="Пароль"> 
-        <a href="#" class="btn">Войти</a>
-        <span>
-          <a href="#">Забыли пароль?</a>
-          <a href="#">Новая регистрация</a>
-        </span>
-      </form> 
-    </div> <!--Конец формы входа-->
-    <div class="basket-form"> <!--Открывающаяся корзина-->
-      <table>
-        <tr>
-            <td><button class="delete"><span class="visual-hidden">удалить</span></button></td> 
-          <td><img src="img/citrus.png" alt="ice"></td>
-          <td>Пломбир с апельсиновым джемом</td>
-          <td>1,5 кг * <span>200 руб.</span></td>
-          <td>300 руб.</td>
-        </tr>
-        <tr>
-          <td><button class="delete"><span class="visual-hidden">удалить</span></button></td>
-          <td><img src="img/strawberry.png" alt="ice"></td>
-          <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-          <td>1,5 кг * <span>300 руб.</span></td>
-          <td>450 руб.</td>
-        </tr>
-      </table>
-      Итого: 750 руб.
-      <span class="btn"><a href="#">Оформить заказ</a></span> 
-    </div>  <!--конец корзины с товарами-->  
   </body> 
 </html>
