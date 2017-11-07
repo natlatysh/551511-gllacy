@@ -9,7 +9,7 @@
     <header class="main-header"> 
       <div class="conteiner"> <!--Центровщик-->
         <nav class="main-menu">
-          <a href="#" class="disabled"><img src="img/main-logo.png" alt="Логотип магазина Gllasy Shop"> </a>
+          <a><img src="img/main-logo.png" alt="Логотип магазина Gllasy Shop"></a>
           <ul class="navigation">
             <li><a class="catalog" href="catalog.html">Каталог</a>
               <ul class="sub-menu">
@@ -27,17 +27,28 @@
         <div class="user">  
           <div class="search">
             <a class="btn-user search" href="#">Поиск</a>
-            <div class="search-form">
+            <div class="search-form"> <!--Скрытая форма поиска-->
               <form action="#" method="get">
                 <input type="text" placeholder="Что ищем?">
               </form> 
-            </div>
-          </div> <!--ты сказал, что форма входа search-form должана быть внутри search, но в то же время в другом месте написано, что модальные формы надо вниз перед /body Так куда в итоге?-->
+            </div> <!--конец скрытой формы поиска-->
+          </div> 
           <a class="btn-user login" href="#">Вход</a>
+          <div class="user-block"> <!--Скрытая форма входа-->
+            <form action="#" method="post">
+              <input type="email" placeholder="Электронная почта">
+              <input type="password" placeholder="Пароль"> 
+              <a href="#" class="btn">Войти</a>
+              <span>
+                <a href="#">Забыли пароль?</a>
+                <a href="#">Новая регистрация</a>
+              </span>
+            </form>
+          </div> <!--конец скрытой формы входа-->    
           <a class="btn-user basket" href="#">Пусто</a>
         </div>        
         <p class="logo-contact">C 10 до 20, ежедневно<br>
-          <a href="tel:88124502525">812 450-25-25</a></p>
+          <a href="tel:+78124502525">812 450-25-25</a></p>
         <div class="slider">
           <input type="radio" id="btn-1" checked>
           <input type="radio" id="btn-2">
@@ -47,20 +58,22 @@
               <label for="btn-2"></label>
               <label for="btn-3"></label>
             </div>
-          <div class="slider-inner"><!--Внутренний блок на ширину всех трех изобр-ний-->
-            <div class="raspberry">
-              <span class="slider-ice">Крем-брюле и пломбир с малиновым джемом</span>
-            </div>
-            <div class="lime">
-              <span class="slider-ice">Шоколадный пломбир и лимонный сорбет</span>
-            </div>
-            <div class="strawberry">
-              <span class="slider-ice">Пломбир с помадкой и клубничный щербет</span>
-            </div>
+          <div class="slider-inner"><!--Внутренний блок на ширину всех трех изобр-->
+            <div class="slide-field">  
+              <div class="raspberry">
+                <span class="slider-ice">Крем-брюле и пломбир с малиновым джемом</span>
+                <a href="#">Давайте оба!</a>  
+              </div>
+              <div class="lime">
+                <span class="slider-ice">Шоколадный пломбир и лимонный сорбет</span>
+                <a href="#">Давайте оба!</a>  
+              </div>
+              <div class="strawberry">
+                <span class="slider-ice">Пломбир с помадкой и клубничный щербет</span>
+                <a href="#">Давайте оба!</a>   
+              </div>
+            </div>    
           </div> <!--Закрывается внутр.блок.-->
-          <span class="btn">
-            <a href="#">Давайте оба!</a>
-          </span>
         </div>
       </div> <!--Здесь закрывается центровщик шапки-->
     </header>
@@ -81,22 +94,26 @@
         </section>
         <ul class="ice-item">
           <li class="ice item-citrus">
-            <img src="img/citrus.png" alt="Мороженое">
+            <img src="img/hit.png" alt="Хит">
+            <img src="img/citrus.jpg" alt="Мороженое">
             310 &#8381;/<span>кг</span> 
             <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
           </li>
           <li class="ice item-cofe">
-            <img src="http://placehold.it/150x100" alt="Мороженое">
+            <img src="img/hit.png" alt="Хит">
+            <img src="img/cofe.jpg" alt="Мороженое">
             380 &#8381;/<span>кг</span>
             <a href="#">Сливочно-кофейное с кусочками шоколада</a>
           </li>
           <li class="ice item-strawberry">
-            <img src="http://placehold.it/150x100" alt="Мороженое">
+            <img src="img/hit.png" alt="Хит">  
+            <img src="img/strawberry.jpg" alt="Мороженое">
             355 &#8381;/<span>кг</span>
             <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
           </li>
           <li class="ice item-creme">
-            <img src="http://placehold.it/150x100" alt="Мороженое">
+            <img src="img/hit.png" alt="Хит">  
+            <img src="img/creme.jpg" alt="Мороженое">
             415 &#8381;/<span>кг</span>
             <a href="#"> Сливочное крем-брюле с карамельной подливкой</a>
           </li>
@@ -104,10 +121,10 @@
         <section class="features">
           <h2>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
           <ul>
-            <li>Все наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
-            <li>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
-            <li>Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
-            <li>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
+            <li class="ice-logo">Все наше мороженое изготавливается на собственном производстве с использованием современного оборудования и проверенных временем технологий.</li>
+            <li class="leave-logo">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
+            <li class="cow-logo">Закупка ингридиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</li>
+            <li class="term-logo">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul> 
         </section>
         <article class="blog">
@@ -160,32 +177,21 @@
           </ul>      
         </nav>
         <section class="copyright">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" alt="Логотип html academy"></a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-small.png" alt="Логотип html academy"></a>
           Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> &#169;2017  
         </section>
       </div>  <!--Центровщик закрывается-->  
     </footer> 
-     <div class="user-block">
-       <form action="#" method="post">
-         <input type="email" placeholder="Электронная почта">
-         <input type="password" placeholder="Пароль"> 
-         <span class="btn">
-           <a href="#">Войти</a>
-         </span>
-         <span>
-           <a href="#">Забыли пароль?</a>
-           <a href="#">Новая регистрация</a>
-         </span>
-       </form>
-     </div>
-     <div class="feedback-form">
-       <span> Мы обязательно вам ответим!</span>
-       <form action="#" method="post">
-         <input type="text" placeholder="Как вам зовут?">
-         <input type="email" placeholder="Ваша почта для ответа?"> <!--Нужно ли имя инпуту? Свойство могу по типу задать-->
-         <textarea id="feedback" name="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea> 
-         <button type="submit" class="btn" value="Отправить"></button>
-       </form>
-     </div>
+    <div class="feedback-form">
+      <span> Мы обязательно вам ответим!</span>
+      <button class="delete"><span class="visual-hidden">удалить</span>
+      </button>
+      <form action="#" method="post">
+        <input type="text" placeholder="Как вам зовут?">
+        <input type="email" placeholder="Ваша почта для ответа?"> 
+        <textarea id="feedback" name="feedback-textarea" placeholder="Напишите что-нибудь..."></textarea> 
+        <button type="submit" class="btn" value="Отправить"></button>
+      </form>
+    </div>
   </body> 
 </html>
