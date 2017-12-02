@@ -12,7 +12,7 @@
     <input type="radio" name="ice-slider" id="btn-3" class="visually-hidden">
     <div class="site-wrapper">
       <header class="main-header">
-        <div class="conteiner"> <!--Центровщик-->
+        <div class="container"> <!--Центровщик-->
           <nav class="main-menu" area-label="Главное меню">
             <a class="logo"><img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64"></a>
             <ul class="navigation">
@@ -26,7 +26,7 @@
                 </ul>
               </li>
               <li><a href="#">Доставка и оплата</a></li>
-              <li><a href="#">О компании</a></li>
+              <li><a href="#">О Компании</a></li>
             </ul>
             <div class="user">
               <div class="search">
@@ -68,7 +68,7 @@
               </div>
             </div>
           </nav> <!--Закрывается шапка без контактов-->
-          <div class="logo-conteiner">
+          <div class="logo-container">
             <p class="logo-contact">C 10 до 20, ежедневно<br>
               <a href="tel:+78124502525" class="general">8 812 450-25-25</a>
             </p>
@@ -99,7 +99,7 @@
         </div> <!--Здесь закрывается центровщик шапки-->
       </header>
       <main>
-        <div class="conteiner"> <!--Центровщик-->
+        <div class="container"> <!--Центровщик-->
           <section class="content">
             <h1 class="visually-hidden">Магазин мороженого Gllasy Shop</h1>
             <section class="content-left">
@@ -113,7 +113,7 @@
               <a href="#" class="btn wish">Хочу шоколадки!</a>
             </section>
           </section>
-          <ul class="ice-item">
+          <ul class="ice-item favorite">
             <li class="ice item-citrus index">
               <mark class="visually-hidden">Хит</mark>
               <img src="img/citrus.jpg" alt="Мороженое" width="267" height="267">
@@ -175,8 +175,9 @@
         </div>
         <div class="main-map">
           <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4577eab6249c8b385690ffe1cd97b1a48dda9650e53dc25b4393c963e6202855&amp;source=constructor"
-          width="1200" height="434">
+          width="1200" height="434" class="map">
           </iframe>
+          <div class="container">
           <section class="main-adress">
             Адрес главного офиса и офлайн-магазина:<br>
             <b>ул. Большая Конюшенная<br>
@@ -187,23 +188,23 @@
             <a class="btn btn-feedback" href="#">Форма обратной связи</a>
           </section>
         </div>
+        </div>
       </main>
-      <hr>
       <footer>
-        <div class="conteiner"> <!--Центровщик-->
-          <section class="social-btn">
+        <div class="container"> <!--Центровщик-->
+          <section class="social">
             <ul>
-              <li class="social-btn social-tw">
-                <a href="https://twitter.com/htmlacademy_ru">
+              <li class="social-btn">
+                <a href="https://twitter.com/htmlacademy_ru" class="social-tw">
                 <span class="visually-hidden">Твиттер</span></a></li>
-              <li class="social-btn social-insta">
-                <a href="https://www.instagram.com/htmlacademy/">
+              <li class="social-btn">
+                <a href="https://www.instagram.com/htmlacademy/" class="social-insta">
                 <span class="visually-hidden">Инстаграм</a></span></li>
-              <li class="social-btn social-fb">
-                <a href="https://www.facebook.com/htmlacademy">
+              <li class="social-btn">
+                <a href="https://www.facebook.com/htmlacademy" class="social-fb">
                 <span class="visually-hidden">Фейсбук</a></span></li>
-              <li class="social-btn social-vk">
-                <a href="https://vk.com/htmlacademy">
+              <li class="social-btn">
+                <a href="https://vk.com/htmlacademy" class="social-vk">
                 <span class="visually-hidden">Вконтакте</span></a></li>
             </ul>
           </section>
@@ -224,6 +225,7 @@
           </section>
         </div>  <!--Центровщик закрывается-->
       </footer>
+      <div class="container">
       <div class="feedback-form">
         <fieldset area-label="форма обратной связи">
           <span> Мы обязательно вам ответим!</span>
@@ -240,9 +242,10 @@
               title="напишите что-нибудь" class="feedback-field textarea" placeholder="Напишите что-нибудь..."></textarea>
             </label>
             <button name="submit" type="submit" class="btn">Отправить</button>
-          </fieldset>
-        </form>
+          </form>
+        </fieldset>
       </div>
+    </div>
     </div> <!--Закрывается обертка wrapper-->
   </body>
 </html>

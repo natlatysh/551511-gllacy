@@ -7,10 +7,10 @@
     <link href="stylesheets.css" rel="stylesheet">
   </head>
   <body>
-    <div class="conteiner"> <!--Центровщик-->
+    <div class="container"> <!--Центровщик-->
       <header class="main-header-catalog">
         <nav class="main-menu" area-label="Главное меню">
-          <a href="index.html"><img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64"></a>
+          <a href="index.html" class="logo"><img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64"></a>
           <ul class="navigation">
             <li class="catalog current"><a area-label="текущий раздел меню">Каталог</a>
               <ul class="sub-menu" area-label="Подменю раздела каталог">
@@ -22,7 +22,7 @@
               </ul>
             </li>
             <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">О компании</a></li>
+            <li><a href="#">О Компании</a></li>
           </ul>
         <div class="user">
           <div class="search">
@@ -64,7 +64,7 @@
             <div class="basket-form"> <!--Открывающаяся корзина-->
               <table>
                 <tr class="row-basket">
-                  <td class="basket-form-del">
+                  <td class="basket-form-delete">
                     <button class="delete">
                       <span class="visually-hidden">удалить товар из корзины</span>
                     </button>
@@ -81,7 +81,7 @@
                     </button>
                   </td>
                   <td class="basket-form-img"><img src="img/strawberry.jpg" alt="мороженое" width="33" height="33"></td>
-                  <td class="basket-form-name">Клубничный пломбир с присыпкой из белого шоколада</td>
+                  <td class="basket-form-name second-name">Клубничный пломбир с присыпкой из белого шоколада</td>
                   <td class="basket-form-price">1,5 кг * <span class="price">300 руб.</span></td>
                   <td class="basket-form-sum" area-label="сумма">450 руб.</td>
                 </tr>
@@ -91,16 +91,18 @@
             </div> <!--конец корзины с товарами-->
         </div> <!--закрывается блок корзины-->
       </nav>
+      <div class="contact-wrapper">
+        <ul class="breadcrumbs">
+          <li><a href="index.html" class="general general-breadcrumbs">Главная</a></li>
+          <li><a href="#" class="general general-breadcrumbs">Каталог </a></li>
+          <li><a href="catalog.html" area-label="текущая страница" class="general catalog-current">Сливочное </a></li>
+        </ul>
         <p class="logo-contact">C 10 до 20, ежедневно<br>
-          <a href="tel:+78124502525" class="general">812 450-25-25</a>
+          <a href="tel:+78124502525" class="general">8 812 450-25-25</a>
         </p>
+      </div>
       </header>
       <main>
-        <ul class="breadcrumbs">
-          <li><a href="index.html" class="general">Главная</a></li>
-          <li><a href="#" class="general">Каталог </a></li>
-          <li><a href="#" area-label="текущая страница" class="catalog-current">Сливочное </a></li>
-        </ul>
         <header>
           <h1 class="catalog-header">Сливочное мороженое</h1>
           <section> <!--Для центровки всех фильтров-->
@@ -115,26 +117,27 @@
                   <option value="по жирности">по жирности</option>
                 </select>
               </fieldset>
-              <fieldset class="filter" area-label="фильтр сортировки">
+              <fieldset class="filter filter-range" area-label="фильтр сортировки">
                 <legend>Цена: 100 руб. – 500 руб.</legend>
-                <input type="number" name="price1">
-                <input type="number" name="price2">
-                <input type="range" name="range">
+                <div class="price-wrapper">
+                  <input type="number" name="price1" class="filter filter-range">
+                  <input type="number" name="price2" class="filter filter-range">
+                </div>
               </fieldset>
-              <fieldset class="filter" area-label="фильтр сортировки">
+              <fieldset class="filter filter-fat" area-label="фильтр сортировки">
                 <legend>Жирность:</legend>
                 <p class="fat">
                   <label><input type="radio" name="fat" value="0%" class="fat-hidden visually-hidden">
-                    <span class="fat-radio"> 0% </span></label>
-                  <label><input type="radio" name="fat" value="10%"  class="fat-hidden visually-hidden" checked>
-                    <span class="fat-radio"> 10%</span></label>
+                    <span class="fat-radio">0%</span></label>
+                  <label><input type="radio" name="fat" value="до 10%"  class="fat-hidden visually-hidden" checked>
+                    <span class="fat-radio">до 10%</span></label>
                   <label><input type="radio" name="fat" value="до 30%" class="fat-hidden visually-hidden">
                     <span class="fat-radio">до 30%</span></label>
                   <label><input type="radio" name="fat" value="выше 30%" class="fat-hidden visually-hidden">
                     <span class="fat-radio">выше 30%</span></label>
               </p>
               </fieldset>
-              <fieldset class="filter" area-label="фильтр сортировки">
+              <fieldset class="filter filter-filler" area-label="фильтр сортировки">
                 <legend> Наполнители:</legend>
                 <p class="filler">
                   <label><input type="checkbox" name="filler[]" value="шоколадные" class="filler-hidden visually-hidden">
@@ -229,31 +232,32 @@
             </li>
           </ul>
           <div class="paginator">
-            <a><span class="visually-hidden">Предыдущая страница</span></a>
+            <a class="prev-page"><span class="visually-hidden">Предыдущая страница</span></a>
             <a class="current" area-label="Текущая страница">1</a>
             <a href="#">2</a>
             <a href="#">3</a>
             <a href="#">4</a>
             <a href="#">5</a>
-            <a href="#"><span class="visually-hidden">Следующая страница</span></a>
+            <a href="#" class="next-page"><span class="visually-hidden">Следующая страница</span></a>
           </div>
         </section>
       </main>
     <hr>
-    <footer class="catalog-footer">
-        <section class="social-btn">
+    <footer>
+      <div class="footer-wrapper">
+        <section class="social">
           <ul>
-            <li class="social-btn social-tw">
-              <a href="https://twitter.com/htmlacademy_ru">
+            <li class="social-btn">
+              <a href="https://twitter.com/htmlacademy_ru" class="social-tw">
               <span class="visually-hidden">Твиттер</span></a></li>
-            <li class="social-btn social-insta">
-              <a href="https://www.instagram.com/htmlacademy/">
+            <li class="social-btn">
+              <a href="https://www.instagram.com/htmlacademy/" class="social-insta">
               <span class="visually-hidden">Инстаграм</a></span></li>
-            <li class="social-btn social-fb">
-              <a href="https://www.facebook.com/htmlacademy">
+            <li class="social-btn">
+              <a href="https://www.facebook.com/htmlacademy" class="social-fb">
               <span class="visually-hidden">Фейсбук</a></span></li>
-            <li class="social-btn social-vk">
-              <a href="https://vk.com/htmlacademy">
+            <li class="social-btn">
+              <a href="https://vk.com/htmlacademy" class="social-vk">
               <span class="visually-hidden">Вконтакте</span></a></li>
           </ul>
         </section>
@@ -272,6 +276,7 @@
             <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="general"
           area-label="ссылка на лендинг интенсива в HTML Academy"> HTML Academy</a> &#169; 2017</p>
         </section>
+      </div>
       </footer>
     </div> <!--Здесь закрывается центровщик-->
   </body>

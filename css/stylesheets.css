@@ -1,4 +1,4 @@
- @font-face {
+* @font-face {
     font-family: "Roboto";
     src: url("fonts/roboto-regular-webfont.woff2") format("woff2"),
          url("fonts/roboto-regular-webfont.woff") format("woff");
@@ -22,7 +22,7 @@
     font-style: normal;
 }
 
-*:root {
+:root {
     box-sizing: border-box;
 }
 
@@ -87,7 +87,7 @@ img {
 
 .slider {
   position: relative;
-  padding-top: 370px;
+  padding-top: 362px;
   text-align: center;
   color: #ffffff;
 }
@@ -129,8 +129,8 @@ img {
 
 .slider-controls label {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   margin-right: 8px;
   vertical-align: top;
   background-color: transparent;
@@ -141,8 +141,8 @@ img {
 
 .slider-controls {
   position: absolute;
-  bottom: 47px;
-  left: -3px;
+  bottom: 63px;
+  left: 0;
   z-index: 10;
   font-size: 0;
 }
@@ -199,19 +199,7 @@ img {
 .general:hover,
 .general:active {
    color:#ffbc9e;
-   text-decoration-color: #ffbc9e;
  }
-
-.general-breadcrumbs::after {
-content: "\00BB";
-position: absolute;
-top:2px;
-left:60px;
- }
-
-.general {
-  position: relative;
-}
 
 .navigation a {
 
@@ -291,7 +279,6 @@ left:60px;
 .catalog.current {
   border-radius: 20px;
   padding-left: 8px;
-  text-decoration: none;
 }
 
 .sub-menu a {
@@ -485,7 +472,7 @@ a.serving:active {
 
 .btn-user.search:hover {
     background-image: url("img/loupa-hover.png");
-    background-position: 75% 52%;
+    background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size:17px 17px;
 
@@ -604,10 +591,6 @@ padding-bottom: 7px;
   z-index: 5;
 }
 
-.container {
-  position: relative;
-}
-
 .main-adress {
     font-size: 14px;
     font-weight:400;
@@ -616,7 +599,7 @@ padding-bottom: 7px;
     background-color: #fdfefe;
     width: 302px;
     min-height: 304px;
-    padding: 27px 26px 30px;
+    padding: 30px 26px;
     border-radius: 15px;
     position: absolute;
     top: 61px;
@@ -631,7 +614,8 @@ padding-bottom: 7px;
 
 .main-map {
   position: relative;
-  margin: 0 auto 21px;
+  width: 1200px;
+  margin: 0 auto;
   min-height: 430px;
 }
 
@@ -640,7 +624,7 @@ padding-bottom: 7px;
     font-weight: 700;
     color: #323232;
     line-height: 24px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
     padding-top: 5px;
     display: inline-block;
     text-decoration: none;
@@ -653,7 +637,7 @@ padding-bottom: 7px;
     color: #323232;
     line-height: 24px;
     text-decoration: none;
-    padding-top: 8px;
+    padding-top: 5px;
     padding-bottom: 4px;
 }
 
@@ -674,7 +658,7 @@ padding-bottom: 7px;
 .btn-feedback {
     color:#ffffff;
     display: inline-block;
-    padding: 7px 26px;
+    padding: 11px 17px;
     margin-top: 24px;
 }
 
@@ -689,31 +673,6 @@ padding-bottom: 7px;
   box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
   color:#fceeec;
 }
-
-
-.slider-btn {
-  font-size: 32px;
-  font-weight: 700;
-  line-height: 44px;
-  display: inline-block;
-  padding: 12px 40px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: top;
-  text-decoration: none;
-  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-  background-color: #f26843;
-  background-image: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
-  border-radius: 50px;
-  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
-  border: none;
-  cursor: pointer;
-}
-
-.slide-field {
-    margin-top: -110px;
-    margin-left: -46px;
-  }
 
 .logo-contact {
       display: block;
@@ -831,7 +790,7 @@ padding-bottom: 7px;
    right: -13px;
    bottom: -46px;
    opacity: 0.2;
-   z-index: -1;
+z-index: -1;
 }
 
 .ice.index::before {
@@ -856,7 +815,7 @@ font-size: 16px;
 font-weight: 500;
 color:#ffffff;
 line-height: 22px;
-margin-bottom: 40px;
+margin-bottom: 38px;
 text-decoration-color: #9db1a5;
 width: 260px;
 padding-left: 5px;
@@ -888,7 +847,7 @@ padding-left: 5px;
     margin: 0;
     min-height: 308px;
     width: 1146px;
-    margin-bottom: 36px;
+    margin-bottom: 40px;
 }
 
 .leave-logo {
@@ -989,8 +948,8 @@ padding-left: 5px;
   width: 15px;
   height: 13px;
   position: absolute;
-  top:17px;
-  left:-25px;
+  top:22px;
+  left:-22px;
 }
 
 .footer-industry {
@@ -1268,27 +1227,13 @@ padding-left: 5px;
   z-index: 1;
 }
 
-.ice:hover .describe {
-  text-decoration: underline;
-  text-decoration-color: #bbc9c0;
-}
-
-.describe.general:hover {
-  text-decoration: underline;
-  text-decoration-color: #e2b49a;
-}
-
 .ice-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
-  margin-bottom: 46px;
+  margin-bottom: 48px;
   margin-top: 21px;
-}
-
-.ice-item.favorite {
-  margin-bottom: -5px;
 }
 
 .ice-price {
@@ -1479,7 +1424,6 @@ margin-right:26px;
   background-image: url("img/twitter.svg");
   background-repeat: no-repeat;
   position: absolute;
-  opacity: 0.8;
   width: 32px;
   height: 32px;
   top:0;
@@ -1492,11 +1436,11 @@ margin-right:26px;
   position: relative;
 }
 
-.social-tw::before:hover {
+.social-tw:hover {
   opacity: 1;
 }
 
-.social-tw::before:active {
+.social-fb:active {
   opacity: 0.8;
 }
 
@@ -1505,7 +1449,6 @@ margin-right:26px;
   background-image: url("img/instagram.svg");
   background-repeat: no-repeat;
   position: absolute;
-  opacity: 0.8;
   width: 32px;
   height: 32px;
   top: 0;
@@ -1518,11 +1461,11 @@ margin-right:26px;
   position: relative;
 }
 
-.social-insta::before:hover {
+.social-insta:hover {
   opacity: 1;
 }
 
-.social-insta::before:active {
+.social-fb:active {
   opacity: 0.8;
 }
 
@@ -1531,7 +1474,6 @@ margin-right:26px;
   background-image: url("img/fb.svg");
   background-repeat: no-repeat;
   position: absolute;
-  opacity: 0.8;
   width: 32px;
   height: 32px;
   top: 0;
@@ -1544,11 +1486,11 @@ margin-right:26px;
   position: relative;
 }
 
-.social-fb::before:hover {
+.social-fb:hover {
   opacity: 1;
 }
 
-.social-fb::before:active {
+.social-fb:active {
   opacity: 0.8;
 }
 
@@ -1557,7 +1499,6 @@ margin-right:26px;
   background-image: url("img/vk.svg");
   background-repeat: no-repeat;
   position: absolute;
-  opacity: 0.8;
   width: 32px;
   height: 32px;
   top: 0;
@@ -1570,11 +1511,11 @@ top: 0px;
 left: 95px;
 }
 
-.social-vk::before:hover {
+.social-vk:hover {
   opacity: 1;
 }
 
-.social-vk::before:active {
+.social-vk:active {
   opacity: 0.8;
 }
 
@@ -1600,7 +1541,7 @@ footer .container {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  margin-top: 19px;
+  margin-top: 15px;
 
 }
 
@@ -1705,9 +1646,6 @@ input[type="radio"].visually-hidden{
   flex-direction: column;
 }
 
-.basket-form {
-  display: none;
-}
 .user-block {
     position: absolute;
     top:36px;
