@@ -699,6 +699,9 @@ input [type="email"] {
     position: relative;
     margin: 0 auto 19px;
     min-height: 430px;
+    background-image: url("img/map.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-adress b {
@@ -1114,7 +1117,7 @@ input [type="email"] {
     font-weight: 400;
     color: #ffffff;
     line-height: 1.2;
-    border-bottom: 1px solid #9db1a5;
+    border-bottom: 1px solid rgba(256,256,256,0.2);
 }
 
 .footer-menu li:first-child a {
@@ -1130,6 +1133,14 @@ input [type="email"] {
 
 .copyright p {
     margin-top: 3px;
+}
+
+.copyright .general {
+    border-bottom: 1px solid rgba(256,256,256,0.2);
+}
+
+.copyright .general:hover {
+    border-bottom: 1px solid rgba(249,172,159,0.3);
 }
 
 .basket-form-del::before {
@@ -1237,9 +1248,10 @@ input [type="email"] {
     line-height: 1.2;
 }
 
-.filter-range > legend {
+.range > legend {
     padding-left: 21px;
     padding-top: 6px;
+    padding-bottom: 5px;
 }
 
 .filter-fat > legend {
@@ -1248,9 +1260,10 @@ input [type="email"] {
     padding-bottom: 7px;
 }
 
-.filter-range {
+.range {
     margin-right: 14px;
     margin-left: 6px;
+    min-width: 220px;
 }
 
 .fat {
@@ -1273,6 +1286,7 @@ input [type="email"] {
     border-radius: 20px;
     padding: 3px 14px 7px 9px;
     margin-top: 5px;
+    min-width: 193px;
 }
 
 .sorting::-ms-expand {
@@ -1287,8 +1301,8 @@ input [type="email"] {
   	border-right: 5px solid transparent;
   	border-top: 6px solid #ffffff;
     position: absolute;
-    top:40px;
-    right: -65px;
+    top:45px;
+    right: -89px;
     z-index: -5;
 }
 
