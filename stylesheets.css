@@ -1275,6 +1275,27 @@ input [type="email"] {
     margin-top: 5px;
 }
 
+.sorting::-ms-expand {
+    display: none;
+}
+
+.sort::before {
+    content: "";
+    width: 0;
+  	height: 0;
+  	border-left: 5px solid transparent;
+  	border-right: 5px solid transparent;
+  	border-top: 6px solid #ffffff;
+    position: absolute;
+    top:40px;
+    right: -65px;
+    z-index: -5;
+}
+
+.sort {
+  position: relative;
+}
+
 .sorting:hover {
     color: #323232;
 }
