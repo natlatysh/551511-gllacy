@@ -251,7 +251,7 @@ img {
 }
 
 .sub-menu li:first-child {
-    border-bottom: 1px solid rgba(256,256,256,0.2);
+    border-bottom: 1px solid rgba(50,59,50,0.2);
 }
 
 .navigation li {
@@ -290,7 +290,7 @@ img {
 
 .sub-menu li {
     margin: 0;
-    padding: 0px 2px 2px 13px;
+    padding: 0px 13px 2px 13px;
 }
 
 .sub-menu li:first-child:hover {
@@ -380,7 +380,7 @@ a.serving:active {
 
 .basket-form {
     background-color: #f8f7f4;
-    width: 539px;
+    min-width: 539px;
     min-height: 241px;
     padding: 18px 12px;
     border-radius: 7px;
@@ -413,9 +413,14 @@ a.serving:active {
     width: 27px;
 }
 
+.basket-form-delete {
+  min-width: 5.5%;
+}
+
 .basket-form-img {
     width: 46px;
     position: relative;
+    min-width: 9%;
 }
 
 .basket-form-img img {
@@ -427,6 +432,7 @@ a.serving:active {
 .basket-form-name {
     padding-bottom: 28px;
     padding-left: 2px;
+    min-width: 47%;
 }
 
 .basket-form-name.second-name {
@@ -437,6 +443,7 @@ a.serving:active {
     width: 124px;
     padding-left: 5px;
     padding-bottom: 27px;
+    min-width: 24%;
 }
 
 .basket-form-price .price {
@@ -447,6 +454,7 @@ a.serving:active {
     width: 73px;
     padding-left: 6px;
     padding-bottom: 27px;
+    min-width: 14.5%;
 }
 
 .basket-amount {
@@ -590,6 +598,7 @@ input [type="email"] {
 
 .feedback-form .btn {
     margin-left: 284px;
+    border: none;
 }
 
 .feedback-form fieldset {
@@ -625,20 +634,6 @@ input [type="email"] {
 .feedback-field::placeholder {
     font-weight: 400;
     color: #999999;
-}
-
-.feedback-field:hover {
-    border: 3px solid #c7c6c5;
-    padding-left: 11px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-}
-
-.feedback-field:focus {
-    border: 3px solid #8fbdec;
-    padding-left: 11px;
-    padding-top: 7px;
-    padding-bottom: 7px;
 }
 
 .feedback-field {
@@ -1320,7 +1315,7 @@ input [type="email"] {
 
 .btn-filter {
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.13;
     border: 2px solid #f6f8f7;
     border-radius: 20px;
@@ -1341,6 +1336,10 @@ input [type="email"] {
 .btn-filter:active {
     background-color: #eaeaea;
     color: #323232;
+}
+
+.btn-filter:active {
+box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
 }
 
 .paginator .current {
@@ -1868,6 +1867,27 @@ input[type="radio"].visually-hidden {
     border-radius: 5px;
 }
 
+.login-field:hover,
+.password-field:hover,
+.search-form-text:hover,
+.feedback-field:hover {
+    box-shadow: inset 0 0 1px 1px rgba(154,154,154,0.52);
+}
+
+.login-field:focus,
+.password-field:focus,
+.search-form-text:focus,
+.feedback-field:focus {
+    box-shadow: inset 0 0 1px 1px rgba(46,136,228,0.52);
+}
+
+.login-field:active,
+.password-field:active,
+.search-form-text:active,
+.feedback-field:active {
+    box-shadow: inset 0 0 1px 0 rgba(178,178,178,0.52);
+}
+
 .search-form-text {
     width: 310px;
 }
@@ -1896,6 +1916,7 @@ input[type="radio"].visually-hidden {
     top: 38px;
     left: -7px;
     border-radius: 5px;
+    z-index: 3;
 }
 
 .logo {
@@ -2148,16 +2169,7 @@ input[type='number'] {
 }
 
 .feedback-form {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 25;
-}
-
-.modal-show {
-    display: block;
 }
 
 .pic-range {
@@ -2168,6 +2180,7 @@ input[type='number'] {
     border-radius: 20px;
     padding-top: 16px;
     padding-left: 26px;
+    cursor: pointer;
 }
 
 .paint-range {
@@ -2202,13 +2215,20 @@ input[type='number'] {
     right: 60px;
     box-sizing: content-box;
 }
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  z-index: 30;
-  background-color: rgba(0,0,0,0.4);
-  display: none;
+
+.feedback-wrapper {
+    position: fixed;
+    display: none;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(0,0,0,0.4);
+    z-index:100;
+}
+
+.modal-show {
+  display: flex;
 }
