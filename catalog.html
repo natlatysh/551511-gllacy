@@ -13,7 +13,7 @@
     <!--Центровщик-->
     <header class="main-header main-header-catalog">
       <nav class="main-menu" aria-label="Главное меню">
-        <a href="index.html" class="logo"><img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64"></a>
+        <a href="index.html" class="logo-catalog"><img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64"></a>
         <ul class="navigation">
           <li class="catalog current"><a aria-label="текущий раздел меню">Каталог</a>
             <ul class="sub-menu addfield" aria-label="Подменю раздела каталог">
@@ -112,7 +112,7 @@
         <section><!--Для центровки всех фильтров-->
           <form action="#" method="get" class="filter-form">
             <fieldset class="filter" aria-label="фильтр сортировки">
-              <legend class="sort">Сортировка:</legend>
+              <legend class="sort"><label>Сортировка:<label></legend>
               <select id="sorting" name="sorting" class="sorting">
                 <option value="по популярности">по&nbsp;популярности</option>
                 <option value="сначала недорогие">сначала недорогие</option>
@@ -121,10 +121,12 @@
               </select>
             </fieldset>
             <fieldset class="filter range" aria-label="фильтр сортировки">
-              <legend>Цена: 100&nbsp;руб. &mdash;&nbsp;500&nbsp;руб.</legend>
-              <div class="price-wrapper">
-                <input type="number" name="price1" class="filter filter-range">
+              <legend>Цена:
+                <input type="number" name="price1" class="filter filter-range">&mdash;&nbsp;
                 <input type="number" name="price2" class="filter filter-range">
+              </legend>
+              <div class="price-wrapper">
+                <div class="pic-range"><div class="paint-range"></div></div>
               </div>
             </fieldset>
             <fieldset class="filter filter-fat" aria-label="фильтр сортировки">
