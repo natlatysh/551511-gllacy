@@ -1947,7 +1947,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 }
 
-footer .container, footer-wrapper {
+footer .container, .footer-wrapper {
     border-top: 1px solid rgba(256,256,256,0.3);
 }
 
