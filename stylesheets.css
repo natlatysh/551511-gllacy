@@ -380,7 +380,7 @@ a.serving:active {
 
 .basket-form {
     background-color: #f8f7f4;
-    max-width: 539px;
+    width: 539px;
     min-height: 241px;
     padding: 18px 12px;
     border-radius: 7px;
