@@ -380,7 +380,7 @@ a.serving:active {
 
 .basket-form {
     background-color: #f8f7f4;
-    min-width: 539px;
+    max-width: 539px;
     min-height: 241px;
     padding: 18px 12px;
     border-radius: 7px;
@@ -409,18 +409,13 @@ a.serving:active {
     border-bottom: 1px solid rgba(256,256,256,0.2);
 }
 
-.basket-form-del {
-    width: 27px;
-}
-
 .basket-form-delete {
-  min-width: 5.5%;
+    width: 5.5%;
 }
 
 .basket-form-img {
-    width: 46px;
     position: relative;
-    min-width: 9%;
+    width: 9%;
 }
 
 .basket-form-img img {
@@ -432,7 +427,7 @@ a.serving:active {
 .basket-form-name {
     padding-bottom: 28px;
     padding-left: 2px;
-    min-width: 47%;
+    width: 47%;
 }
 
 .basket-form-name.second-name {
@@ -440,10 +435,9 @@ a.serving:active {
 }
 
 .basket-form-price {
-    width: 124px;
     padding-left: 5px;
     padding-bottom: 27px;
-    min-width: 24%;
+    width: 24%;
 }
 
 .basket-form-price .price {
@@ -451,10 +445,9 @@ a.serving:active {
 }
 
 .basket-form-sum {
-    width: 73px;
     padding-left: 6px;
     padding-bottom: 27px;
-    min-width: 14.5%;
+    width: 14.5%;
 }
 
 .basket-amount {
@@ -644,28 +637,28 @@ input [type="email"] {
     position: absolute;
     top: -40px;
     left: 0;
-    z-index: 5;
+    z-index: 60;
 }
 
 .feedback-field:focus:-ms-input-placeholder {
     position: absolute;
     top: -40px;
     left: 0;
-    z-index: 5;
+    z-index: 60;
 }
 
 .feedback-field:focus::-ms-input-placeholder {
     position: absolute;
     top: -40px;
     left: 0;
-    z-index: 5;
+    z-index: 60;
 }
 
 .feedback-field:focus::placeholder {
     position: absolute;
     top: -40px;
     left: 0;
-    z-index: 5;
+    z-index: 60;
 }
 
 .container {
@@ -729,10 +722,6 @@ input [type="email"] {
 .phone:hover {
     padding-bottom: 3px;
 }
-/*
-.sub-menu li:first-child {
- border-bottom: 1px solid rgba(255,255,255,0.2);
-}*/
 
 .btn {
     font-size: 18px;
@@ -1763,7 +1752,8 @@ input[type="radio"].visually-hidden {
     -ms-flex-align: center;
     align-items: center;
     width: 1146px;
-    margin-top: 6px;
+    margin-top: 0;
+    padding-top: 9px;
 }
 
 .user {
@@ -1995,7 +1985,7 @@ footer .container, .footer-wrapper {
 }
 
 .item {
-    margin-bottom: 22px;
+    margin-bottom: 48px;
 }
 
 .copyright {
@@ -2169,7 +2159,7 @@ input[type='number'] {
 }
 
 .feedback-form {
-    z-index: 25;
+    z-index: 55;
 }
 
 .pic-range {
@@ -2226,7 +2216,7 @@ input[type='number'] {
     justify-content: center;
     align-items:center;
     background-color: rgba(0,0,0,0.4);
-    z-index:100;
+    z-index:50;
 }
 
 .modal-show {

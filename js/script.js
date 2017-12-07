@@ -1,14 +1,14 @@
 var btn = document.querySelector(".btn-feedback");
-var modal = document.querySelector(".feedback-form");
-var close = modal.querySelector(".delete");
 var wrapper = document.querySelector(".feedback-wrapper");
+var close = wrapper.querySelector(".delete");
+var name = wrapper.querySelector("[name=feedback-name]");
 
 btn.addEventListener("click", function (evt) {
 wrapper.classList.add("modal-show");
+name.focus();
 });
 
 close.addEventListener("click", function (evt) {
-evt.preventDefault();
 wrapper.classList.remove("modal-show");
 });
 
@@ -19,8 +19,3 @@ if (wrapper.classList.contains("modal-show"))  {
 }
 }
 });
-
-wrapper.addEventListener("click", function (evt) {
-evt.preventDefault();
-wrapper.classList.remove("modal-show");
-  });
