@@ -1,7 +1,7 @@
 var btn = document.querySelector(".btn-feedback");
 var wrapper = document.querySelector(".feedback-wrapper");
 var close = wrapper.querySelector(".delete");
-var name = wrapper.querySelector("[name=feedback-name]");
+var name = document.querySelector(".name");
 
 btn.addEventListener("click", function (evt) {
 wrapper.classList.add("modal-show");

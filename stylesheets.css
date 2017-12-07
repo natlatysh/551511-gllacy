@@ -219,6 +219,10 @@ img {
     left: 60px;
 }
 
+.general-breadcrumbs:hover::after {
+    color: #ffffff;
+}
+
 .general {
     position: relative;
     text-decoration: none;
@@ -226,12 +230,12 @@ img {
 
 /*
 .image-box {
- width: 267px;
- height: 267px;
- border-radius: 50%;
- padding: 0;
- margin: 0;
- position: relative;
+    width: 267px;
+    height: 267px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    position: relative;
 }
 */
 .navigation a {
@@ -286,6 +290,11 @@ img {
 
 .navigation .sub-menu {
     background-color: #f8f7f4;
+    display: none;
+    -webkit-box-shadow: 0 20px 20px 0px rgba(0,0,0,0.4);
+    box-shadow: 0 20px 20px 0px rgba(0,0,0,0.4);
+    padding: 0;
+    min-width: 144px;
 }
 
 .sub-menu li {
@@ -578,6 +587,14 @@ input [type="email"] {
     margin-top: 18px;
 }
 
+.login-field,
+.search-form-text,
+.password-field {
+    font-size: 16px;
+    font-weight: 700;
+    color: #323232;
+}
+
 .feedback-form {
     font-size: 24px;
     font-weight: 500;
@@ -627,38 +644,6 @@ input [type="email"] {
 .feedback-field::placeholder {
     font-weight: 400;
     color: #999999;
-}
-
-.feedback-field {
-    position: relative;
-}
-
-.feedback-field:focus::-webkit-input-placeholder {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    z-index: 60;
-}
-
-.feedback-field:focus:-ms-input-placeholder {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    z-index: 60;
-}
-
-.feedback-field:focus::-ms-input-placeholder {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    z-index: 60;
-}
-
-.feedback-field:focus::placeholder {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    z-index: 60;
 }
 
 .container {
@@ -1525,17 +1510,6 @@ li.ice-logo::before {
     left: 584px;
 }
 
-.navigation .sub-menu {
-    display: none;
-    -webkit-box-shadow: 0 20px 20px 0px rgba(0,0,0,0.4);
-    box-shadow: 0 20px 20px 0px rgba(0,0,0,0.4);
-}
-
-.navigation ul {
-    padding: 0;
-    min-width: 144px;
-}
-
 .blog h2 {
     width: 330px;
     margin-right: 55px;
@@ -1753,7 +1727,11 @@ input[type="radio"].visually-hidden {
     align-items: center;
     width: 1146px;
     margin-top: 0;
-    padding-top: 9px;
+    padding-top: 12px;
+}
+
+.menu-catalog {
+  padding-top: 6px;
 }
 
 .user {
@@ -1893,13 +1871,13 @@ input[type="radio"].visually-hidden {
     padding: 20px;
     height: 214px;
 }
-
+/*
 .navigation > li {
     display: inline-block;
     position: relative;
     vertical-align: baseline;
 }
-
+*/
 .sub-menu {
     position: absolute;
     display: block;

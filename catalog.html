@@ -1,21 +1,21 @@
 <!DOCTYPE HTML>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title> магазин мороженого Gllacy Shop</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="stylesheets.css" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <!--Центровщик-->
+  <div class="container"><!--Центровщик-->
     <header class="main-header main-header-catalog">
-      <nav class="main-menu" aria-label="Главное меню">
-        <a href="index.html" class="logo-catalog"><img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64"></a>
+      <nav class="main-menu menu-catalog" aria-label="Главное меню">
+        <a href="index.html" class="logo-catalog">
+          <img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64">
+        </a>
         <ul class="navigation">
-          <li class="catalog current"><a aria-label="текущий раздел меню">Каталог</a>
+          <li class="catalog current">
+            <a aria-label="текущий раздел меню">Каталог</a>
             <ul class="sub-menu addfield" aria-label="Подменю раздела каталог">
               <li><a href="#">Новинки</a></li>
               <li class="current"><a href="catalog.html" aria-label="текущая страница">Сливочное</a></li>
@@ -29,15 +29,15 @@
         </ul>
         <div class="user">
           <div class="search">
-            <a class="btn-user search" href="#"><span class="visually-hidden">Поиск</span></a>
-            <div class="search-form addfield">
-              <!--Скрытая форма поиска-->
+            <a class="btn-user search" href="#"><span class="visually-hidden">Поиск</span>
+            </a>
+            <div class="search-form addfield"><!--Скрытая форма поиска-->
               <form action="#" method="get">
                 <label aria-label="Поле для ввода поискового запроса">
                   <input type="text" name="search-form-text" class="search-form-text" placeholder="Что ищем?" title="Что ищем?">
                 </label>
               </form>
-            </div>
+            </div><!--Конец скрытой формы поиска-->
           </div>
           <div class="entrance">
             <a class="btn-user login" href="#">Вход</a>
@@ -96,12 +96,22 @@
       </nav>
       <div class="contact-wrapper">
         <ul class="breadcrumbs">
-          <li><a href="index.html" class="general general-breadcrumbs"><span class="underline">Главная</span></a></li>
-          <li><a href="#" class="general general-breadcrumbs"><span class="underline">Каталог</span></a></li>
-          <li><a href="catalog.html" aria-label="текущая страница" class="general catalog-current">Сливочное</a></li>
+          <li>
+            <a href="index.html" class="general general-breadcrumbs">
+              <span class="underline">Главная</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="general general-breadcrumbs">
+              <span class="underline">Каталог</span>
+            </a>
+          </li>
+          <li>
+            <a href="catalog.html" aria-label="текущая страница" class="general catalog-current">Сливочное
+            </a>
+          </li>
         </ul>
-        <p class="logo-contact">C&nbsp;10&nbsp;до&nbsp;20, ежедневно
-          <br>
+        <p class="logo-contact">C&nbsp;10&nbsp;до&nbsp;20, ежедневно<br>
           <a href="tel:+78124502525" class="general">8&nbsp;812 450-25-25</a>
         </p>
       </div>
@@ -126,7 +136,9 @@
                 <input type="number" name="price2" class="filter filter-range">
               </legend>
               <div class="price-wrapper">
-                <div class="pic-range"><div class="paint-range"></div></div>
+                <div class="pic-range">
+                  <div class="paint-range"></div>
+                </div>
               </div>
             </fieldset>
             <fieldset class="filter filter-fat" aria-label="фильтр сортировки">
@@ -151,27 +163,27 @@
               </p>
             </fieldset>
             <fieldset class="filter filter-filler" aria-label="фильтр сортировки">
-              <legend> Наполнители:</legend>
+              <legend>Наполнители:</legend>
               <p class="filler">
                 <label>
                   <input type="checkbox" name="filler[]" value="шоколадные" class="filler-hidden visually-hidden">
-                  <span class="filler-checkbox"> шоколадные</span>
+                  <span class="filler-checkbox">шоколадные</span>
                 </label>
                 <label>
                   <input type="checkbox" name="filler[]" value="сахарные присыпки" class="filler-hidden visually-hidden">
-                  <span class="filler-checkbox"> сахарные присыпки</span>
+                  <span class="filler-checkbox">сахарные присыпки</span>
                 </label>
                 <label>
                   <input type="checkbox" name="filler[]" value="фрукты" class="filler-hidden visually-hidden">
-                  <span class="filler-checkbox"> фрукты</span>
+                  <span class="filler-checkbox">фрукты</span>
                 </label>
                 <label>
                   <input type="checkbox" name="filler[]" value="сиропы" class="filler-hidden visually-hidden">
-                  <span class="filler-checkbox"> сиропы</span>
+                  <span class="filler-checkbox">сиропы</span>
                 </label>
                 <label>
                   <input type="checkbox" name="filler[]" value="джемы" class="filler-hidden visually-hidden">
-                  <span class="filler-checkbox"> джемы</span>
+                  <span class="filler-checkbox">джемы</span>
                 </label>
               </p>
             </fieldset>
@@ -292,13 +304,16 @@
         </ul>
         <div class="paginator">
           <a class="prev-page">
-            <span class="visually-hidden">Предыдущая страница</span></a>
+            <span class="visually-hidden">Предыдущая страница</span>
+          </a>
           <a class="current" aria-label="Текущая страница">1</a>
           <a href="#">2</a>
           <a href="#">3</a>
           <a href="#">4</a>
           <a href="#">5</a>
-          <a href="#" class="next-page"><span class="visually-hidden">Следующая страница</span></a>
+          <a href="#" class="next-page">
+            <span class="visually-hidden">Следующая страница</span>
+          </a>
         </div>
       </section>
     </main>
@@ -330,16 +345,26 @@
         </section>
         <nav class="footer-menu" aria-label="навигация нижней части сайта">
           <ul>
-            <li class="footer-supplier"><a href="#" class="general">Для поставщиков</a></li>
-            <li class="footer-industry"><a href="#" class="general">О&nbsp;производстве</a></li>
-            <li class="footer-doc"><a href="#" class="general">Наши документы</a></li>
-            <li class="footer-eco"><a href="#" class="general">Экологические стандарты</a></li>
+            <li class="footer-supplier">
+              <a href="#" class="general">Для поставщиков</a>
+            </li>
+            <li class="footer-industry">
+              <a href="#" class="general">О&nbsp;производстве</a>
+            </li>
+            <li class="footer-doc">
+              <a href="#" class="general">Наши документы</a>
+            </li>
+            <li class="footer-eco">
+              <a href="#" class="general">Экологические стандарты</a>
+            </li>
           </ul>
         </nav>
         <section class="copyright">
           <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="ссылка на лендинг интенсива в HTML Academy">
-            <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="108" height="39"></a>
-          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="general" aria-label="ссылка на лендинг интенсива в HTML Academy"> HTML Academy</a>            &copy;&nbsp;2017</p>
+            <img src="img/logo-htmlacademy.svg" alt="Логотип html academy" width="108" height="39">
+          </a>
+          <p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss" class="general" aria-label="ссылка на лендинг интенсива в HTML Academy"> HTML Academy</a>&copy;&nbsp;2017
+          </p>
         </section>
       </div>
     </footer>
