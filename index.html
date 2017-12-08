@@ -37,7 +37,8 @@
               <div class="search-form addfield"><!--Скрытая форма поиска-->
                 <form action="#" method="get">
                   <label aria-label="Поле для ввода поискового запроса">
-                    <input type="text" name="search-form-text" class="search-form-text" placeholder="Что ищем?" title="Что ищем?">
+                    <input type="text" name="search-form-text" class="search-form-text" placeholder="Что ищем?"
+                    title="Что ищем?" autofocus>
                   </label>
                 </form>
               </div><!--конец скрытой формы поиска-->
@@ -48,10 +49,12 @@
                 <form action="#" method="post">
                   <fieldset class="user-block-entrance">
                     <label aria-label="Поле для ввода электронной почты">
-                      <input type="email" name="user-block-email" class="login-field" placeholder="Электронная почта" title="Введите вашу электронную почту">
+                      <input type="email" name="user-block-email" class="login-field" placeholder="Электронная почта"
+                      title="Введите вашу электронную почту" autofocus>
                     </label>
                     <label aria-label="Поле для ввода пароля">
-                      <input name="user-block-password" type="password" placeholder="Пароль" class="password-field" title="Пароль">
+                      <input name="user-block-password" type="password" placeholder="Пароль" class="password-field"
+                      title="Пароль" autofocus>
                     </label>
                     <div class="enter-wrap">
                       <a href="#" class="btn entrance">Войти</a>
@@ -76,9 +79,9 @@
         </div>
         <section class="slider">
           <div class="slider-controls">
-            <label for="btn-1">Первая</label>
-            <label for="btn-2">Вторая</label>
-            <label for="btn-3">Третья</label>
+            <label for="btn-1" tabindex="0">Первая</label>
+            <label for="btn-2" tabindex="0">Вторая</label>
+            <label for="btn-3" tabindex="0">Третья</label>
           </div>
           <div class="slider-inner"><!--Внутренний блок на ширину всех трех изобр-->
             <ul class="slide-field">
@@ -110,7 +113,7 @@
           </section>
           <section class="content-right offer">
             <h2>Шоколадки даром!</h2>
-            <p>При покупке 2&nbsp;кг пломбира, добавим в&nbsp;ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+            <p>При покупке 2&nbsp;кг пломбира, добавим в&nbsp;ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a href="#" class="btn wish">Хочу шоколадки!</a>
           </section>
         </section>
@@ -118,8 +121,7 @@
           <li class="ice item-citrus index">
             <mark class="visually-hidden">Хит</mark>
             <img src="img/citrus.jpg" alt="Мороженое" width="267" height="267">
-            <p><span class="ice-price">310 ₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">310<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe describe-index"><span class="underline">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span>
             </a>
             <a href="#" class="btn btn-view general">Быстрый просмотр</a>
@@ -127,8 +129,7 @@
           <li class="ice item-cofe index">
             <mark class="visually-hidden">Хит</mark>
             <img src="img/cofe.jpg" alt="Мороженое" width="267" height="267">
-            <p><span class="ice-price">380 ₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">380<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe describe-index"><span class="underline">Сливочно-кофейное с&nbsp;кусочками шоколада</span>
             </a>
             <a href="#" class="btn btn-view general">Быстрый просмотр</a>
@@ -136,8 +137,7 @@
           <li class="ice item-strawberry index">
             <mark class="visually-hidden">Хит</mark>
             <img src="img/strawberry.jpg" alt="Мороженое" width="267" height="267">
-            <p><span class="ice-price">355 ₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">355<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe describe-index"><span class="underline">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</span>
             </a>
             <a href="#" class="btn btn-view general">Быстрый просмотр</a>
@@ -145,8 +145,7 @@
           <li class="ice item-creme index">
             <mark class="visually-hidden">Хит</mark>
             <img src="img/creme.jpg" alt="Мороженое" width="267" height="267">
-            <p><span class="ice-price">415 ₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">415<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe describe-index"><span class="underline">Сливочное крем-брюле с&nbsp;карамельной подливкой</span>
             </a>
             <a href="#" class="btn btn-view general">Быстрый просмотр</a>
@@ -283,7 +282,6 @@
       </div>
     </div>
   </div><!--Закрывается обертка wrapper-->
-  <script src="js/script.js" type="text/javascript">
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

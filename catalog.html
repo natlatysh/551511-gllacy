@@ -10,12 +10,12 @@
   <div class="container"><!--Центровщик-->
     <header class="main-header main-header-catalog">
       <nav class="main-menu menu-catalog" aria-label="Главное меню">
-        <a href="index.html" class="logo-catalog">
+        <a href="index.html" class="logo-catalog" tabindex="0">
           <img src="img/main-logo.svg" alt="Логотип магазина Gllasy Shop" width="154" height="64">
         </a>
         <ul class="navigation">
           <li class="catalog current">
-            <a aria-label="текущий раздел меню">Каталог</a>
+            <a tabindex="0" aria-label="текущий раздел меню">Каталог</a>
             <ul class="sub-menu addfield" aria-label="Подменю раздела каталог">
               <li><a href="#">Новинки</a></li>
               <li class="current"><a href="catalog.html" aria-label="текущая страница">Сливочное</a></li>
@@ -122,7 +122,7 @@
         <section><!--Для центровки всех фильтров-->
           <form action="#" method="get" class="filter-form">
             <fieldset class="filter" aria-label="фильтр сортировки">
-              <legend class="sort"><label>Сортировка:<label></legend>
+              <label for="sorting" class="sort">Сортировка:</label>
               <select id="sorting" name="sorting" class="sorting">
                 <option value="по популярности">по&nbsp;популярности</option>
                 <option value="сначала недорогие">сначала недорогие</option>
@@ -137,7 +137,7 @@
               </legend>
               <div class="price-wrapper">
                 <div class="pic-range">
-                  <div class="paint-range"></div>
+                  <div class="paint-range" tabindex="0"></div>
                 </div>
               </div>
             </fieldset>
@@ -195,8 +195,7 @@
         <ul class="ice-item">
           <li class="ice">
             <img src="img/citrus.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">310₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">310<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочное с&nbsp;апельсиновым джемом и&nbsp;цитрусовой стружкой</span>
             </a>
@@ -204,8 +203,7 @@
           </li>
           <li class="ice">
             <img src="img/cofe.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">380₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">380<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочно-кофейное с&nbsp;кусочками шоколада</span>
             </a>
@@ -213,8 +211,7 @@
           </li>
           <li class="ice">
             <img src="img/strawberry.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">355₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">355<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочно-клубничное с&nbsp;присыпкой из&nbsp;белого шоколада</span>
             </a>
@@ -222,8 +219,7 @@
           </li>
           <li class="ice">
             <img src="img/creme.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">415₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">415<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочное крем-брюле с&nbsp;карамельной подливкой</span>
             </a>
@@ -231,8 +227,7 @@
           </li>
           <li class="ice">
             <img src="img/cranberry.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">325₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">325<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочное с&nbsp;брусничным джемом</span>
             </a>
@@ -240,8 +235,7 @@
           </li>
           <li class="ice">
             <img src="img/blueberry.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">410₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">410<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe ">
               <span class="underline">Сливочно-черничное с&nbsp;цельными ягодами черники</span>
             </a>
@@ -249,8 +243,7 @@
           </li>
           <li class="ice">
             <img src="img/lime.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">375₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">375<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочно-лимонное с&nbsp;карамельной присыпкой</span>
             </a>
@@ -258,8 +251,7 @@
           </li>
           <li class="ice">
             <img src="img/creme-choco.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">320₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">320<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочное c&nbsp;шоколадной стружкой</span>
             </a>
@@ -267,8 +259,7 @@
           </li>
           <li class="ice">
             <img src="img/vanill.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">440₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">440<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочно-ванильное с&nbsp;кусочками шоколада</span>
             </a>
@@ -276,8 +267,7 @@
           </li>
           <li class="ice">
             <img src="img/mentol.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">435₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">435<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочное с&nbsp;ментоловым сиропом</span>
             </a>
@@ -285,8 +275,7 @@
           </li>
           <li class="ice">
             <img src="img/black-choco.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">355₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">355<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочное с&nbsp;кусочками черного шоколада</span>
             </a>
@@ -294,8 +283,7 @@
           </li>
           <li class="ice">
             <img src="img/mint.jpg" alt="мороженое" width="267" height="267">
-            <p><span class="ice-price">420₽<span>/кг</span></span>
-            </p>
+            <span class="ice-price">420<span aria-label="рублей">/кг</span></span>
             <a href="#" class="describe">
               <span class="underline">Сливочное с&nbsp;мятным сиропом</span>
             </a>
