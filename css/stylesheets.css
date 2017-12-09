@@ -741,7 +741,7 @@ input [type="email"] {
 }
 
 .btn.wish {
-    padding: 11px 22px 10px 23px;
+    padding: 10px 23px 10px 23px;
     -ms-flex-item-align: end;
     align-self: flex-end;
     margin-bottom: 0;
@@ -848,14 +848,14 @@ input [type="email"] {
     background-image: url("../img/raspberry-fon.jpg");
     background-repeat: no-repeat;
     background-color: #970118;
-    border-radius: 15px;
+    border-radius: 22px;
 }
 
 .content-right {
     background-image: url("../img/choco-fon.jpg");
     background-repeat: no-repeat;
     background-color: #180602;
-    border-radius: 15px;
+    border-radius: 22px;
     margin: 0px;
 }
 
@@ -865,7 +865,7 @@ input [type="email"] {
     line-height: 1.2;
     padding: 0;
     margin: 0;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
 }
 
 .content-left p,
@@ -942,6 +942,8 @@ input [type="email"] {
     background-image: url("../img/hit.svg");
     background-repeat: no-repeat;
     position: absolute;
+    top:-2px;
+    left: 0;
     width: 61px;
     height: 61px;
 }
@@ -964,7 +966,7 @@ input [type="email"] {
 }
 
 .describe-index {
-    margin-bottom: 44px;
+    margin-bottom: 47px;
 }
 
 .describe:hover {
@@ -972,7 +974,7 @@ input [type="email"] {
 }
 
 .describe-index:hover {
-    margin-bottom: 43px;
+    margin-bottom: 46px;
 }
 
 .btn-view {
@@ -999,11 +1001,12 @@ input [type="email"] {
     background-color: #ede1c8;
     list-style: none;
     border-radius: 20px;
-    padding: 25px 20px 0px 20px;
+    padding: 23px 20px 0px 22px;
     margin: 0;
     min-height: 308px;
     width: 1146px;
-    margin-bottom: 36px;
+    margin-bottom: 33px;
+    position: relative;
 }
 
 .leave-logo {
@@ -1031,7 +1034,7 @@ input [type="email"] {
     line-height: 1.25;
     padding: 0;
     margin: 0;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
 }
 
 .features li {
@@ -1040,7 +1043,7 @@ input [type="email"] {
     line-height: 1.38;
     list-style: none;
     width: 480px;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
 }
 
 .feature-list {
@@ -1484,12 +1487,13 @@ box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
 
 .ice-item.favorite {
     margin-bottom: -7px;
+    margin-top: 0;
 }
 
 .ice-price {
     position: absolute;
-    top: 205px;
-    left: -2px;
+    top: 206px;
+    left: 0;
 }
 
 .describe {
@@ -1505,15 +1509,11 @@ box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
     margin-right: 0px;
 }
 
-.content {
+.container .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 20px;
-}
-
-.features {
-    position: relative;
+    margin-bottom: 41px;
 }
 
 li.ice-logo::before {
@@ -1527,7 +1527,7 @@ li.ice-logo::before {
     top: 130px;
     margin-left: 20px;
     margin-right: 8px;
-    top: 95px;
+    top: 93px;
     left: 0px;
 }
 
