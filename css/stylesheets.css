@@ -842,6 +842,7 @@ input [type="email"] {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    background-size: cover;
 }
 
 .content-left {
@@ -1044,6 +1045,7 @@ input [type="email"] {
     list-style: none;
     width: 480px;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .feature-list {
@@ -1523,12 +1525,10 @@ li.ice-logo::before {
     position: absolute;
     width: 49px;
     height: 49px;
-    left: 20px;
-    top: 130px;
     margin-left: 20px;
     margin-right: 8px;
-    top: 93px;
-    left: 0px;
+    top: -13px;
+    left: -78px;
 }
 
 .leave-logo::before {
@@ -1538,8 +1538,8 @@ li.ice-logo::before {
     position: absolute;
     width: 49px;
     height: 49px;
-    top: 182px;
-    left: 20px;
+    top: -13px;
+    left: -59px;
 }
 
 .cow-logo::before {
@@ -1549,8 +1549,8 @@ li.ice-logo::before {
     position: absolute;
     width: 49px;
     height: 49px;
-    top: 94px;
-    left: 584px;
+    top: -13px;
+    left: -59px;
 }
 
 .term-logo::before {
@@ -1560,8 +1560,8 @@ li.ice-logo::before {
     position: absolute;
     width: 49px;
     height: 49px;
-    top: 182px;
-    left: 584px;
+    top: 5px;
+    left: -40px;
 }
 
 .blog h2 {
