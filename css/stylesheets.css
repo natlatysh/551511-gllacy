@@ -59,7 +59,7 @@ img {
 }
 
 .site-wrapper {
-    min-width: 900px;
+    width: 900px;
     background-color: #849d8f;
     background-image: url("../img/ice1.png");
     background-repeat: no-repeat;
@@ -297,7 +297,7 @@ img {
     -webkit-box-shadow: 0 20px 20px 0px rgba(0,0,0,0.4);
     box-shadow: 0 20px 20px 0px rgba(0,0,0,0.4);
     padding: 0;
-    min-width: 144px;
+    width: 144px;
 }
 
 .sub-menu li {
@@ -560,7 +560,7 @@ a.serving:active {
 }
 
 .search-form {
-    min-width: 341px;
+    width: 341px;
 }
 
 .spam-field {
@@ -1088,7 +1088,7 @@ a.serving:active {
 
 .footer-menu a {
     display: block;
-    min-width: 142px;
+    width: 142px;
     text-decoration: none;
 }
 
@@ -1278,7 +1278,7 @@ a.serving:active {
 .range {
     margin-right: 33px;
     margin-left: 10px;
-    min-width: 220px;
+    width: 220px;
 }
 
 .fat {
@@ -1733,7 +1733,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form {
-    min-width: 341px;
+    width: 341px;
     min-height: 84px;
     background-color: #f8f7f4;
     padding: 21px 15px 0px 15px;
@@ -2001,12 +2001,12 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-user.search {
-    min-width: 32px;
+    width: 32px;
     padding: 15px 20px 17px 14px;
 }
 
 .btn-user.login {
-    min-width: 92px;
+    width: 92px;
     padding: 9px 17px 8px 45px;
 }
 
