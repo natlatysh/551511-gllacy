@@ -1,5 +1,4 @@
-@font-face {
-    font-family: "Roboto";
+@font-face {font-family: "Roboto";
     src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
          url("../fonts/roboto-regular-webfont.woff") format("woff");
     font-weight: 400;
@@ -159,29 +158,29 @@ img {
     display: none;
 }
 
-#btn-1:checked ~ .site-wrapper #slide1,
-#btn-2:checked ~ .site-wrapper #slide2,
-#btn-3:checked ~ .site-wrapper #slide3 {
+.slide-1:checked ~ .site-wrapper .slide1,
+.slide-2:checked ~ .site-wrapper .slide2,
+.slide:checked ~ .site-wrapper .slide3 {
     display: block;
 }
 
-#btn-1:checked ~ .site-wrapper label[for="btn-1"],
-#btn-2:checked ~ .site-wrapper label[for="btn-2"],
-#btn-3:checked ~ .site-wrapper label[for="btn-3"] {
+.slide-1:checked ~ .site-wrapper label[for="btn-1"],
+.slide-2:checked ~ .site-wrapper label[for="btn-2"],
+.slide-3:checked ~ .site-wrapper label[for="btn-3"] {
     background-color: #ffffff;
 }
 
-#btn-1:checked ~ .site-wrapper {
+slide-1:checked ~ .site-wrapper {
     background-color: #849d8f;
     background-image: url("../img/ice1.png");
 }
 
-#btn-2:checked ~ .site-wrapper {
+.slide-2:checked ~ .site-wrapper {
     background-color: #8996a6;
     background-image: url("../img/ice2.png");
 }
 
-#btn-3:checked ~ .site-wrapper {
+.slide-3:checked ~ .site-wrapper {
     background-color: #9d8b84;
     background-image: url("../img/ice3.png");
 }
