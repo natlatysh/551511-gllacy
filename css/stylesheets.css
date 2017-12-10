@@ -1,13 +1,13 @@
 @font-face {
     font-family: "Roboto";
     src: url("../fonts/roboto-regular-webfont.woff2") format("woff2"),
-        url("../fonts/roboto-regular-webfont.woff") format("woff");
+         url("../fonts/roboto-regular-webfont.woff") format("woff");
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "Roboto";
+   font-family: "Roboto";
    src: url("../fonts/roboto-medium-webfont.woff2") format("woff2"),
         url("../fonts/roboto-medium-webfont.woff") format("woff");
    font-weight: 500;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: "Roboto";
+   font-family: "Roboto";
    src: url("../fonts/roboto-bold-webfont.woff2") format("woff2"),
         url("../fonts/roboto-bold-webfont.woff") format("woff");
    font-weight: 700;
@@ -228,16 +228,6 @@ img {
     text-decoration: none;
 }
 
-/*
-.image-box {
-    width: 267px;
-    height: 267px;
-    border-radius: 50%;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
-*/
 .navigation a {
     font-size: 16px;
     font-weight: 700;
@@ -1150,9 +1140,9 @@ a.serving:active {
 }
 
 .copyright img {
-  padding: 0;
-  margin: 0;
-  padding-top: 17px;
+    padding: 0;
+    margin: 0;
+    padding-top: 17px;
 }
 
 .copyright .general:hover {
@@ -1313,11 +1303,12 @@ a.serving:active {
     display: none;
 }
 
-.sorting { -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
-  display: block;
+.sorting {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    display: block;
 }
 
 .sorting:hover {
@@ -1363,7 +1354,7 @@ a.serving:active {
 }
 
 .btn-filter:active {
-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
 }
 
 .paginator .current {
@@ -1777,7 +1768,7 @@ input[type="radio"].visually-hidden {
 }
 
 .menu-catalog {
-  padding-top: 6px;
+    padding-top: 6px;
 }
 
 .user {
@@ -2045,7 +2036,7 @@ footer .container, .footer-wrapper {
 }
 
 .footer-oco {
-  flex-basis: 173px;
+    flex-basis: 173px;
 }
 .item {
     margin-bottom: 31px;
@@ -2128,7 +2119,7 @@ footer .container, .footer-wrapper {
 }
 
 .fat-radio:hover::before {
-  opacity: 1;
+    opacity: 1;
 }
 
 .fat-hidden:checked ~ .fat-radio::before {
@@ -2144,7 +2135,7 @@ footer .container, .footer-wrapper {
 
 .fat-radio:disabled::before,
 .filler-checkbox:disabled::before {
-  opacity: 0.4;
+    opacity: 0.4;
 }
 
 .price-wrapper {
@@ -2222,7 +2213,7 @@ input[type='number'] {
 }
 
 .filler-checkbox:hover::before {
-  opacity:1;
+    opacity:1;
 }
 
 .filler-hidden:checked ~ .filler-checkbox::before {
@@ -2300,5 +2291,5 @@ input[type='number'] {
 }
 
 .modal-show {
-  display: flex;
+    display: flex;
 }
