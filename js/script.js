@@ -6,6 +6,7 @@ var form = wrapper.querySelector("form");
 var email = wrapper.querySelector(".email");
 var textarea = wrapper.querySelector(".textarea");
 btn.addEventListener("click", function(evt) {
+    evt.preventDefault();
     wrapper.classList.add("modal-show");
     name.focus();
 });
