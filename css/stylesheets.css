@@ -159,7 +159,7 @@ img {
 
 .slider {
     position: relative;
-    min-height: 600px;
+    min-height: 490px;
     text-align: center;
     color: #ffffff;
 }
@@ -171,13 +171,13 @@ img {
 }
 
 .slider-ice {
-    width: 700px;
+    padding: 234px 70px 0;
     margin: 0 auto 29px;
-    padding-top: 360px;
     font-size: 60px;
     line-height: 1;
     font-weight: 700;
     color: inherit;
+    min-height: 354px;
 }
 
 .slider-btn {
@@ -217,7 +217,7 @@ img {
 
 .slider-controls {
     position: absolute;
-    bottom: 47px;
+    bottom: 62px;
     left: 1px;
     z-index: 10;
     font-size: 0;
@@ -745,7 +745,7 @@ a.serving:active {
     background-repeat: no-repeat;
     background-position: center;
     background-color: #efe8cf;
-    padding-top: 65px;
+    padding-top: 62px;
 }
 
 .main-adress b {
@@ -753,8 +753,8 @@ a.serving:active {
     font-weight: 700;
     color: #323232;
     line-height: 1.3;
-    padding-bottom: 18px;
-    padding-top: 2px;
+    padding-bottom: 21px;
+    padding-top: 4px;
     display: inline-block;
     text-decoration: none;
 }
@@ -849,7 +849,7 @@ a.serving:active {
 }
 
 .slide-field {
-    margin-top: -110px;
+    margin-bottom: 0;
     margin-left: -39px;
 }
 
